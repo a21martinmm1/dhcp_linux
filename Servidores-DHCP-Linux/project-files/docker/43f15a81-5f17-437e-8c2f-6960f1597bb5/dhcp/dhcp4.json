@@ -1,6 +1,9 @@
 {
     "Dhcp4":
     {
+        "dhcp-ddns": {
+         "enable-updates": true
+     },
         "loggers": [
             {
                 "name": "kea-dhcp4",
@@ -17,6 +20,7 @@
             "interfaces": [ "eth0" ],
             "dhcp-socket-type": "raw"
         },
+        
         "subnet4": [
         {
             "id": 1,
@@ -28,6 +32,7 @@
                 }],
             "subnet": "192.168.10.0/24",
             "interface": "eth0",
+            "ddns-qualifying-suffix": "stark.lan.",
             "option-data": [
                 {
                     "name": "domain-name-servers",
@@ -44,7 +49,7 @@
             ],
             "reservations": [
                 {
-                    "hw-address": "46:2d:fe:31:db:52",
+                    "hw-address": "00:50:79:66:68:00",
                     "ip-address": "192.168.10.202"
                 }
             ]
@@ -54,8 +59,12 @@
             "pools": [ { 
                 "pool":  "192.168.11.100 - 192.168.11.200" 
                 } ],
+            "relay": {
+                "ip-addresses": ["192.168.11.10"]
+            },
             "subnet": "192.168.11.0/24",
             "interface": "eth0",
+            "ddns-qualifying-suffix": "lannister.lan.",
             "option-data": [
                 {
                     "name": "domain-name-servers",
@@ -76,8 +85,12 @@
             "pools": [ { 
                 "pool":  "192.168.57.100 - 192.168.57.200" 
                 } ],
+            "relay": {
+                "ip-addresses": ["192.168.57.10"]
+            },
             "subnet": "192.168.57.0/24",
             "interface": "eth0",
+            "ddns-qualifying-suffix": "targaryen.lan.",
             "option-data": [
                 {
                     "name": "domain-name-servers",

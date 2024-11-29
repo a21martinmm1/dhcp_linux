@@ -1,0 +1,49 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+key "ddns" {
+    algorithm hmac-sha256;
+	secret "Mzu3vSrIfPJtGn6rUbKW3foITgiMTtSmmh7Y+0DYMCk=";
+};
+
+
+zone "stark.lan" {
+    type master;
+    file "db.stark.lan";
+    allow-update {key "ddns"; };
+};
+
+zone "lannister.lan" {
+    type master;
+    file "db.lannister.lan";
+    allow-update {key "ddns"; };
+};
+
+zone "targaryen.lan" {
+    type master;
+    file "db.targaryen.lan";
+    allow-update {key "ddns"; };
+};
+
+zone "10.168.192.in-addr.arpa" {
+    type master;
+    file "db.10.168.192";
+    allow-update {key "ddns"; };
+};
+
+zone "11.168.192.in-addr.arpa" {
+    type master;
+    file "db.11.168.192";
+    allow-update {key "ddns"; };
+};
+
+zone "57.168.192.in-addr.arpa" {
+    type master;
+    file "db.57.168.192";
+    allow-update {key "ddns"; };
+};

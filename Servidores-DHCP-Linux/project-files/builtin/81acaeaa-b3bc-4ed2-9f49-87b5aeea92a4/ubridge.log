@@ -1,0 +1,28 @@
+uBridge version 0.9.19 running with libpcap version 1.10.3 (with TPACKET_V3)
+Hypervisor TCP control server started (IP localhost port 44909).
+UDP tunnel connecting from local port 10014 to IPv4 address 127.0.0.1 on port 10015
+Destination NIO listener thread for 81acaeaa-b3bc-4ed2-9f49-87b5aeea92a4-0 has started
+Source NIO listener thread for 81acaeaa-b3bc-4ed2-9f49-87b5aeea92a4-0 has started
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+send: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused
+recv: Connection refused

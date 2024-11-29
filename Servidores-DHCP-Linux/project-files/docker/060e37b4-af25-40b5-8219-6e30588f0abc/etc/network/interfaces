@@ -17,6 +17,7 @@
 auto eth0
 iface eth0 inet dhcp
 #	hostname debian12router-1
+	up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
 # Static config for eth1
 auto eth1
