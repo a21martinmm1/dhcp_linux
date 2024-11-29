@@ -1,0 +1,98 @@
+{
+    "Dhcp4":
+    {
+        "loggers": [
+            {
+                "name": "kea-dhcp4",
+                "severity": "DEBUG",
+                "debuglevel": 0,
+                "output_options": [
+                  {
+                    "output": "/var/log/dhcp.log"
+                  }
+                ]
+            }
+            ],
+        "interfaces-config": {
+            "interfaces": [ "eth0" ],
+            "dhcp-socket-type": "raw"
+        },
+        "subnet4": [
+        {
+            "id": 1,
+            "pools": [ { 
+                "pool":  "192.168.10.30 - 192.168.10.32"
+                },
+                {
+                "pool": "192.168.10.101 - 192.168.10.230"
+                }],
+            "subnet": "192.168.10.0/24",
+            "interface": "eth0",
+            "option-data": [
+                {
+                    "name": "domain-name-servers",
+                    "data": "192.168.10.8"
+                },
+                {
+                    "name": "domain-name",
+                    "data": "stark.lan"
+                },
+                {
+                    "name": "routers",
+                    "data": "192.168.10.254"
+                }
+            ],
+            "reservations": [
+                {
+                    "hw-address": "46:2d:fe:31:db:52",
+                    "ip-address": "192.168.10.202"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "pools": [ { 
+                "pool":  "192.168.11.100 - 192.168.11.200" 
+                } ],
+            "subnet": "192.168.11.0/24",
+            "interface": "eth0",
+            "option-data": [
+                {
+                    "name": "domain-name-servers",
+                    "data": "192.168.10.8"
+                },
+                {
+                    "name": "domain-name",
+                    "data": "lannister.lan"
+                },
+                {
+                    "name": "routers",
+                    "data": "192.168.11.254"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "pools": [ { 
+                "pool":  "192.168.57.100 - 192.168.57.200" 
+                } ],
+            "subnet": "192.168.57.0/24",
+            "interface": "eth0",
+            "option-data": [
+                {
+                    "name": "domain-name-servers",
+                    "data": "192.168.10.8"
+                },
+                {
+                    "name": "domain-name",
+                    "data": "targaryen.lan"
+                },
+                {
+                    "name": "routers",
+                    "data": "192.168.57.254"
+                }
+            ]
+        }
+    ]
+    }
+}
