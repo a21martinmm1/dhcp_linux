@@ -1,5 +1,11 @@
 uBridge version 0.9.19 running with libpcap version 1.10.3 (with TPACKET_V3)
-Hypervisor TCP control server started (IP localhost port 36513).
+Hypervisor TCP control server started (IP localhost port 46515).
 UDP tunnel connecting from local port 10028 to IPv4 address 127.0.0.1 on port 10029
 Source NIO listener thread for 8032a2bd-5a68-498b-857b-33fe92322c70-2 has started
 Destination NIO listener thread for 8032a2bd-5a68-498b-857b-33fe92322c70-2 has started
+recv: Network is down
+send: Network is down
+send: Network is down
+send: Network is down
+send: Network is down
+send: Network is down

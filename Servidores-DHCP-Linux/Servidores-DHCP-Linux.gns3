@@ -653,7 +653,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "46a4827a7d7a9f3e5fad900925707bec05c792aaa450d2e755e2314ff621e3af",
+                    "container_id": "bd8be68ad261a581244d3596c6d38c7c0bace0a59e3f47053e7fb067ae577950",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -697,7 +697,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "bb410aeabb0ab321352858d3e7c78c1195a95dbea774d487fe0b9297618c5c3b",
+                    "container_id": "4434a013b8b434b56ae2b8a5cb59c93842804239538626a59a1b4055e9f0073d",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [],
@@ -766,7 +766,7 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -461,
+                "x": -460,
                 "y": 12,
                 "z": 1
             },
@@ -826,7 +826,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "4f6489d4dc542aab2761b5948cd377da59879041ce08247bd1c78bc377749f5d",
+                    "container_id": "c39968e5c7ad97f7f3ac12e876629e68866033da98aa92cc7150d558d59ce7d0",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -870,7 +870,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "2f1ad51f484e89ef962493dd87615a9f4af784db1623c825e3869e753724375d",
+                    "container_id": "f4f8352c57bf812d42cea81b049f79361bf6e90b79118d7fcafbcf23556f3d6f",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [],
@@ -912,7 +912,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "fcfc7d26e5adffa220b05352fb295012af0250af7fe79c204c170da5af86d601",
+                    "container_id": "1d6a7ff6d98a403f6ff7cb11d43ed81b4ba66fb00ef72d7c36bbb30e319cd5cd",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [],
@@ -1070,7 +1070,7 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": 375,
+                "x": 374,
                 "y": -342,
                 "z": 1
             },
@@ -1099,7 +1099,7 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": 522,
+                "x": 523,
                 "y": -311,
                 "z": 1
             },
@@ -1168,6 +1168,11 @@
                         {
                             "name": "eno1",
                             "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "gns3tap0-0",
+                            "special": true,
                             "type": "ethernet"
                         },
                         {
@@ -1255,7 +1260,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "942a3fa468cfd828e3cf7f7adda36b3b8e60e3d0618660db7122f6de11c143c6",
+                    "container_id": "13395f568ab39896715e5ffe4db3c7e46dc8fc10832d1814172fcf6d6b3ccb49",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1289,7 +1294,7 @@
                 },
                 "locked": false,
                 "name": "WindowsClient",
-                "node_id": "c8d53f93-b7fa-4d3d-936a-eea2d6b9f6e5",
+                "node_id": "d6ddcbd0-718c-4439-806c-cfad8ed368ad",
                 "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -1307,8 +1312,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "952e3e90-adb0-4bee-917b-f726dcb343bc",
                 "width": 65,
-                "x": 428,
-                "y": 311,
+                "x": 432,
+                "y": 332,
                 "z": 1
             },
             {
@@ -1328,7 +1333,7 @@
                 },
                 "locked": false,
                 "name": "WindowsRelay",
-                "node_id": "1d736faf-e968-467b-859e-f69d9861f443",
+                "node_id": "ce1c1028-999e-422a-ac91-b035516b24c4",
                 "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -1346,8 +1351,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "ab042c89-3d04-4979-ad5e-c8b671c9ffee",
                 "width": 65,
-                "x": 716,
-                "y": 288,
+                "x": 708,
+                "y": 287,
                 "z": 1
             }
         ]

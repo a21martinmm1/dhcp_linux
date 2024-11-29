@@ -1,8 +1,10 @@
 {
     "Dhcp4":
     {
+        "ddns-override-no-update": true,
+        "ddns-override-client-update": true,
         "dhcp-ddns": {
-         "enable-updates": true
+            "enable-updates": true
      },
         "loggers": [
             {
